@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		LeaderBoard
+	</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1" />  
+	<style>
+		body{
+			background-color:lightblue;
+			text-align: center;
+			margin:0px;
+		}
+		.header{
+			height:80px;
+			background-color:black;
+			color:white;
+		}
+		.header h1{
+			margin:0px;
+			padding-top:20px;
+		}
+		
+		table{
+			  width: 60%; 
+			  background-color: #f1f1c1;
+			  margin-left:20%;
+			  
+			}
+
+		table, th, td {
+			  border: 1px solid black;
+			  border-collapse: collapse;
+			}
+
+			th, td {
+			  padding: 10px;
+			}
+
+			table tr:nth-child(odd) {
+			 background-color: #fff;
+			}
+
+			table th{
+				background-color:black;
+				color:white;
+				font-size:22px;
+			}
+		@media screen and (max-width:430px){
+			table{
+				margin-left:5%;
+			}
+		}	
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>LeaderBoard</h1>
+	</div>
+	<h1>Codechef Ranking for #include Club Members</h1>
+	<table>
+		<tr>
+           <th>User</th>
+           <th>Codechef Ranking</th>
+           <th>Upgrade</th>
+        </tr>
+          
+		{%for i in name%}
+		<tr>
+			<td>{{i[0]}}</td>
+			<td>{{i[1]}}</td>
+			<td>{{difference[i[0]]}}</td>
+		</tr>
+		{%endfor%}
+
+	</table>
+
+</body>
+</html>

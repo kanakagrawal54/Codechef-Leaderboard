@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Member</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1" />  
+	<style>
+		body{
+			background-color:lightblue;
+			text-align: center;
+			margin:0px;
+		}
+		.header{
+			margin:0px;
+			height:80px;
+			background-color:black;
+			color:#FFFAFA;
+		}
+		.header h1{
+			margin:0px;
+			padding-top:20px;
+			
+		}
+		
+		.new_form{
+			width:50%;
+			height:200px;
+			margin:10% 25%;
+			border:1px solid black;
+			border-radius:10px;
+			background-color:lightgreen;
+			box-shadow:3px 5px 5px black;
+		}
+
+		.label{
+			height:30px;
+		}
+		@media screen and (max-width:700px){
+			.new_form{
+				height:300px;
+			}
+		}
+		@media screen and (max-width:500px)
+		{
+			.new_form{
+				width:80%;
+				height:250px;
+				margin-left:10%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>LeaderBoard</h1>
+	</div>
+<form class="new_form" method="POST">
+	<br>
+	<h1>Want to add a new member!</h1>
+	<label class="label">Codechef_Id</label>
+	<br>
+	<input type="text" name="codechef_id">
+	<br>
+	 <button type="submit" class="btn1 ">Add</button>
+
+</form>
+</body>
+</html>
